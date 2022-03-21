@@ -14,19 +14,17 @@ Please Note that the input command in C++ is std::cin. This is a representation 
 
 #include <iostream>
 
+using namespace std;
 int main()
 {
    double salary, netSalary;
    int etype, otHrs, otRate;
-
-   std:: cout << "Enter Employee Type : ";
-   std:: cin >> etype;
-
-   std:: cout << "Enter Salary  : ";
-   std:: cin >> salary;
-
-   std:: cout << "Enter OtHrs : " ;
-   std:: cin >> otHrs; 
+   cout << "Enter Employee Type : ";
+   cin >> etype;
+   cout << "Enter Salary  : ";
+   cin >> salary;
+   cout << "Enter OtHrs : ";
+   cin >> otHrs; 
    
    switch (etype) {
       case 1 :
@@ -42,8 +40,7 @@ int main()
 
 
    netSalary = salary + otHrs* otRate;
-
-   std:: cout << "Net Salary is " << netSalary;
+   cout << "Net Salary is " <<  netSalary;
   
    return 0;
 }
